@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://139.59.58.153:4000",
+    baseUrl: "http://164.90.163.42:4000",
     prepareHeaders: (headers, { getState }) => {
       const state = getState();
       // console.log('Current state:', state); // Log entire state for debugging
@@ -20,4 +20,4 @@ export const api = createApi({
 });
 
 // export const imageUrl = "http://139.59.58.153:4000/"
-export const imageUrl = "http://10.0.80.85:4000/";
+export const imageUrl = "http://164.90.163.42:4000/";
